@@ -1,7 +1,8 @@
 {
-  "name": "react-chat-tutorial",
+  "name": "chat_app",
   "version": "0.1.0",
   "private": true,
+  "hompage": "https://rohit1727.github.io/chat_app",
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -11,6 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -23,6 +26,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1"
   }
 }
